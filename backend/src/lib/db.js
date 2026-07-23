@@ -1,5 +1,11 @@
+import crypto from "crypto";
 import mongoose from "mongoose";
 import { ENV } from "./env.js";
+
+// polyfill global crypto for MongoDB driver on Node 18
+if (!globalThis.crypto) {
+    globalThis.crypto = crypto;
+}
 
 export const connectDB = async () => {
     try {

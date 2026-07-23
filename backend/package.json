@@ -14,13 +14,14 @@
     "resend": "^6.12.4",
     "socket.io": "^4.8.3"
   },
-  "name": "backend",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
-    "server": "nodemon src/server.js",
     "frontend": "cd ../frontend && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },

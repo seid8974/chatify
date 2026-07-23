@@ -1,4 +1,7 @@
 // Chatify API Server
+import crypto from "crypto";
+if (!globalThis.crypto) globalThis.crypto = crypto;
+
 import express from 'express';
 import cors from "cors";
 import cookieParser from "cookie-parser";
