@@ -1,3 +1,4 @@
+import crypto from "crypto";
 import arcjet, { shield, detectBot, tokenBucket } from "@arcjet/node";
 import { ENV } from "./env.js";
 
