@@ -1,0 +1,13 @@
+{
+  "name": "chatify",
+  "version": "1.0.0",
+  "description": "Chatify full-stack chat app",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "build": "cd backend && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
